@@ -4,7 +4,7 @@ from huggingface_hub import hf_hub_download
 import joblib
 
 # Download and load the model
-model_path = hf_hub_download(repo_id="divyagupta2527-coder/tourism", filename="Tourism_model_v1.joblib")
+model_path = hf_hub_download(repo_id="Divya2527/divya-tourism", filename="Tourism_model_v1.joblib")
 model = joblib.load(model_path)
 
 # Streamlit UI for Machine Failure Prediction

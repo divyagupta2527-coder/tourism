@@ -22,10 +22,10 @@ mlflow.set_experiment("mlops-training-experiment")
 api = HfApi()
 
 
-Xtrain_path = "hf://datasets/divyagupta2527-coder/tourism/Xtrain.csv"
-Xtest_path = "hf://datasets/divyagupta2527-coder/tourism/Xtest.csv"
-ytrain_path = "hf://datasets/divyagupta2527-coder/tourism/ytrain.csv"
-ytest_path = "hf://datasets/divyagupta2527-coder/tourism/ytest.csv"
+Xtrain_path = "hf://datasets/Divya2527/divya-tourism/Xtrain.csv"
+Xtest_path = "hf://datasets/Divya2527/divya-tourism/Xtest.csv"
+ytrain_path = "hf://datasets/Divya2527/divya-tourism/ytrain.csv"
+ytest_path = "hf://datasets/Divya2527/divya-tourism/ytest.csv"
 
 Xtrain = pd.read_csv(Xtrain_path)
 Xtest = pd.read_csv(Xtest_path)
@@ -135,7 +135,7 @@ with mlflow.start_run():
     print(f"Model saved as artifact at: {model_path}")
 
     # Upload to Hugging Face
-    repo_id = "divyagupta2527-coder/tourism"
+    repo_id = "Divya2527/divya-tourism"
     repo_type = "model"
 
     # Step 1: Check if the space exists
